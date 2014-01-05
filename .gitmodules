@@ -55,3 +55,6 @@
 [submodule "bundle/vim-webapi"]
 	path = bundle/vim-webapi
 	url = https://github.com/mattn/webapi-vim
+[submodule "bundle/vim-latex-suite"]
+	path = bundle/vim-latex-suite
+	url = https://github.com/gerw/vim-latex-suite.git
