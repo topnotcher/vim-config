@@ -61,3 +61,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
+[submodule "bundle/vim-syntax-extra"]
+	path = bundle/vim-syntax-extra
+	url = https://github.com/justinmk/vim-syntax-extra.git
