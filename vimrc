@@ -7,7 +7,7 @@ set directory=~/.vim/.vimswap/
 
 filetype indent plugin on
 
-au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType python setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 au FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au FileType ruby setlocal tabstop=4 shiftwidth=4 softtabstop=4
