@@ -31,6 +31,9 @@ set autowrite
 " "  n... :  where to save the viminfo files
 set viminfo='10,\"100,:20,%,n~/.viminfo
 
+
+" restore the cursor to the position it was in in the current file's previous
+" editing session
 function! ResCur()
   if line("'\"") <= line("$")
     normal! g`"
