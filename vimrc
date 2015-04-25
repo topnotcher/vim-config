@@ -42,3 +42,5 @@ augroup resCur
   autocmd!
   autocmd BufWinEnter * call ResCur()
 augroup END
+
+let g:PreserveNoEOL=1
