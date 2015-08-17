@@ -2,15 +2,15 @@ execute pathogen#infect()
 
 setlocal spell spelllang=en_us
 
-set ts=4 sw=4
+set ts=4 sw=4 sts=4 noexpandtab
 set directory=~/.vim/.vimswap/
 
 filetype indent plugin on
 
-au FileType python setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
-au FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
-au FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
-au FileType ruby setlocal tabstop=4 shiftwidth=4 softtabstop=4
+au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+au FileType java setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
+au FileType php setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
+au FileType ruby setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 
 " F5 to remove trailing spaces
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
@@ -25,6 +25,14 @@ set background=dark
 colorscheme solarized
 
 set autowrite
+
+" highlight search results (sensible.vim sets ctrl+L to clear)
+set hlsearch
+
+" Case insensitive searching except when using capital letters
+set ignorecase
+set smartcase
+
 
 " Tell vim to remember certain things when we exit
 " "  '10  :  marks will be remembered for up to 10 previously edited files
