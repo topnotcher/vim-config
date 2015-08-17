@@ -12,6 +12,9 @@ au FileType java setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au FileType php setlocal tabstop=4 shiftwidth=4 softtabstop=4
 au FileType ruby setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
+" F5 to remove trailing spaces
+nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
 " Tell vim the terminal supports 256 colors.
 set t_Co=256
 
