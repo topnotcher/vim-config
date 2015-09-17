@@ -15,12 +15,23 @@ au FileType ruby setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 " F5 to remove trailing spaces
 nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" use multiple of shiftwidth when indenting with '<' and '>'
+set shiftround
+
+" In python, highlight tabs (wow this will get annoying if I read a file with
+" tab indentation...)
+au FileType python setlocal list listchars=tab:>.,trail:.,extends:#,nbsp:.
+
 " Tell vim the terminal supports 256 colors.
 set t_Co=256
-
+		
+" enable syntax highlighting
 syntax on
 
+" line numbering
 set number
+
+" sexyness
 set background=dark
 colorscheme solarized
 
