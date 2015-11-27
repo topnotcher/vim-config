@@ -4,3 +4,4 @@ git submodule init
 git submodule update
 
 ln -s $HOME/.vim/vimrc $HOME/.vimrc
+ln -s $HOME/.config/nvim $HOME/.vim
