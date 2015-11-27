@@ -16,12 +16,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree
-[submodule "bundle/vim-rails"]
-	path = bundle/vim-rails
-	url = https://github.com/tpope/vim-rails.git
-[submodule "bundle/vim-bundler"]
-	path = bundle/vim-bundler
-	url = https://github.com/tpope/vim-bundler.git
 [submodule "bundle/tcomment"]
 	path = bundle/tcomment
 	url = https://github.com/vim-scripts/tComment.git
@@ -34,18 +28,9 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "bundle/vim-coffee-script"]
-	path = bundle/vim-coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "bundle/mustache"]
-	path = bundle/mustache
-	url = https://github.com/juvenn/mustache.vim.git
 [submodule "bundle/vim-repeat"]
 	path = bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat
-[submodule "bundle/vim-haml"]
-	path = bundle/vim-haml
-	url = https://github.com/tpope/vim-haml.git
 [submodule "bundle/supertab"]
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab
