@@ -1,4 +1,6 @@
 .vimswap/*
+.nvimswap/*
 !.vimswap/.keep
+!.nvimswap/.keep
 
 .netrwhist
