@@ -1,3 +1,6 @@
+" roar... vimrc no worky in nvim?
+let python_highlight_all = 1
+
 " Vim syntax file
 " Language:             Python
 " Current Maintainer:   Dmitry Vasiliev <dima at hlabs dot org>

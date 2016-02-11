@@ -5,9 +5,9 @@ setlocal spell spelllang=en_us
 set ts=4 sw=4 sts=4 noexpandtab
 set directory=~/.vim/.vimswap/
 
+filetype plugin on
 filetype indent plugin on
 
-au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 au FileType java setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 au FileType php setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 au FileType ruby setlocal tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
@@ -18,9 +18,25 @@ nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 " use multiple of shiftwidth when indenting with '<' and '>'
 set shiftround
 
+
+""""
+PYTHON
+""""
+
 " In python, highlight tabs (wow this will get annoying if I read a file with
 " tab indentation...)
 au FileType python setlocal list listchars=tab:>.,trail:.,extends:#,nbsp:.
+
+" highlight all the things
+" Note: this doesn't work in nvim...
+au FileType python let python_highlight_all=1
+
+" spaccesss
+au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
+""" 
+End PYTHON
+"""
 
 " Tell vim the terminal supports 256 colors.
 set t_Co=256
@@ -30,6 +46,9 @@ syntax on
 
 " line numbering
 set number
+
+" Show matching (), {}, [] (default)
+set showmatch
 
 " sexyness
 set background=dark
