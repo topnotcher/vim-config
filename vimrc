@@ -3,7 +3,12 @@ execute pathogen#infect()
 setlocal spell spelllang=en_us
 
 set ts=4 sw=4 sts=4 noexpandtab
-set directory=~/.vim/.vimswap/
+
+if has('nvim')
+	set directory=~/.vim/.nvimswap/
+else
+	set directory=~/.vim/.vimswap/
+endif
 
 filetype plugin on
 filetype indent plugin on
@@ -20,7 +25,7 @@ set shiftround
 
 
 """"
-PYTHON
+" PYTHON
 """"
 
 " In python, highlight tabs (wow this will get annoying if I read a file with
@@ -28,14 +33,13 @@ PYTHON
 au FileType python setlocal list listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " highlight all the things
-" Note: this doesn't work in nvim...
 au FileType python let python_highlight_all=1
 
 " spaccesss
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
 """ 
-End PYTHON
+" End PYTHON
 """
 
 " Tell vim the terminal supports 256 colors.
@@ -72,7 +76,9 @@ autocmd! BufWritePost * Neomake
 " "  :20  :  up to 20 lines of command-line history will be remembered
 " "  %    :  saves and restores the buffer list
 " "  n... :  where to save the viminfo files
-set viminfo='10,\"100,:20,%,n~/.viminfo
+if !has('nvim')
+	set viminfo='10,\"100,:20,%,n~/.nviminfo
+endif
 
 
 " restore the cursor to the position it was in in the current file's previous
