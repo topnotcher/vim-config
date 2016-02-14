@@ -63,6 +63,8 @@ set hlsearch
 set ignorecase
 set smartcase
 
+autocmd! BufWritePost * NeoMake
+
 
 " Tell vim to remember certain things when we exit
 " "  '10  :  marks will be remembered for up to 10 previously edited files
