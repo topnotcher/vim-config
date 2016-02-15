@@ -68,6 +68,7 @@ set ignorecase
 set smartcase
 
 autocmd! BufWritePost * Neomake
+autocmd! BufreadPost * Neomake
 
 
 " Tell vim to remember certain things when we exit
