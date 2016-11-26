@@ -70,6 +70,10 @@ set smartcase
 autocmd! BufWritePost * Neomake
 autocmd! BufreadPost * Neomake
 
+if executable('ag')
+	let g:ackprg = 'ag --vimgrep'
+endif
+
 
 " Tell vim to remember certain things when we exit
 " "  '10  :  marks will be remembered for up to 10 previously edited files
