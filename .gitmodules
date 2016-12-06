@@ -61,3 +61,6 @@
 [submodule "bundle/NeoSolarized"]
 	path = bundle/NeoSolarized
 	url = git@github.com:icymind/NeoSolarized.git
+[submodule "bundle/vim-gitgutter"]
+	path = bundle/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
