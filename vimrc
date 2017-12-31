@@ -68,6 +68,9 @@ set hlsearch
 set ignorecase
 set smartcase
 
+" disable line numbers in terminal
+au TermOpen * setlocal nonumber norelativenumber
+
 autocmd! BufWritePost * Neomake
 autocmd! BufreadPost * Neomake
 
