@@ -69,7 +69,9 @@ set ignorecase
 set smartcase
 
 " disable line numbers in terminal
-au TermOpen * setlocal nonumber norelativenumber
+if has('nvim')
+	au TermOpen * setlocal nonumber norelativenumber
+endif
 
 autocmd! BufWritePost * Neomake
 autocmd! BufreadPost * Neomake
