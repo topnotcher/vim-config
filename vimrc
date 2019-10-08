@@ -42,6 +42,13 @@ au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 " End PYTHON
 """
 
+" Kotlin - same as python
+au FileType kotlin setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
+
+" Enable deoplete
+let g:deoplete#enable_at_startup = 1
+call deoplete#enable()
+
 " Tell vim the terminal supports 256 colors.
 set t_Co=256
 		
