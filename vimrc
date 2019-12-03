@@ -38,6 +38,9 @@ au FileType python let python_highlight_all=1
 " spaccesss
 au FileType python setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
+let g:python_host_prog = '/usr/bin/python2'
+let g:python3_host_prog = '/usr/bin/python'
+
 """ 
 " End PYTHON
 """
