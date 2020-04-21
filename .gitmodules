@@ -76,3 +76,6 @@
 [submodule "bundle/deoplete-jedi"]
 	path = bundle/deoplete-jedi
 	url = git@github.com:deoplete-plugins/deoplete-jedi.git
+[submodule "bundle/vim-vue-plugin"]
+	path = bundle/vim-vue-plugin
+	url = git@github.com:leafOfTree/vim-vue-plugin.git
