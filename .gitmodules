@@ -67,9 +67,6 @@
 [submodule "bundle/kotlin-vim"]
 	path = bundle/kotlin-vim
 	url = https://github.com/udalov/kotlin-vim
-[submodule "bundle/Comrade"]
-	path = bundle/Comrade
-	url = git@github.com:beeender/Comrade.git
 [submodule "bundle/deoplete.nvim"]
 	path = bundle/deoplete.nvim
 	url = git@github.com:Shougo/deoplete.nvim.git
