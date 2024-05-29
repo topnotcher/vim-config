@@ -65,7 +65,7 @@ set showmatch
 
 " sexyness
 set background=dark
-colorscheme NeoSolarized
+colorscheme solarized
 set termguicolors
 
 set autowrite
