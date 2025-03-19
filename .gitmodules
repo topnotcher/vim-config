@@ -55,9 +55,6 @@
 [submodule "bundle/neomake"]
 	path = bundle/neomake
 	url = https://github.com/benekastah/neomake.git
-[submodule "bundle/python-syntax"]
-	path = bundle/python-syntax
-	url = https://github.com/hdima/python-syntax.git
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
