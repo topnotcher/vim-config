@@ -73,3 +73,6 @@
 [submodule "nvim-solarized-lua"]
 	path = bundle/nvim-solarized-lua
 	url = https://github.com/ishan9299/nvim-solarized-lua
+[submodule "bundle/copilot.vim"]
+	path = bundle/copilot.vim
+	url = https://github.com/github/copilot.vim

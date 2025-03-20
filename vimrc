@@ -100,6 +100,7 @@ if !has('nvim')
 	set viminfo='10,\"100,:20,%,n~/.nviminfo
 endif
 
+let g:copilot_enabled = 1  
 
 " restore the cursor to the position it was in in the current file's previous
 " editing session
