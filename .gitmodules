@@ -73,6 +73,3 @@
 [submodule "nvim-solarized-lua"]
 	path = bundle/nvim-solarized-lua
 	url = https://github.com/ishan9299/nvim-solarized-lua
-[submodule "bundle/editorconfig-vim"]
-	path = bundle/editorconfig-vim
-	url = https://github.com/editorconfig/editorconfig-vim.git
