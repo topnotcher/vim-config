@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 setlocal spell spelllang=en_us
 
 set ts=4 sw=4 sts=4 noexpandtab
@@ -48,12 +46,6 @@ let g:python3_host_prog = $HOME . '/.vim/env/bin/python'
 " Kotlin - same as python
 au FileType kotlin setlocal tabstop=4 expandtab shiftwidth=4 softtabstop=4
 
-" Enable deoplete
-let g:deoplete#enable_at_startup = 1
-
-" Tell vim the terminal supports 256 colors.
-set t_Co=256
-		
 " enable syntax highlighting
 syntax on
 
@@ -62,11 +54,6 @@ set number
 
 " Show matching (), {}, [] (default)
 set showmatch
-
-" sexyness
-set background=dark
-colorscheme solarized
-set termguicolors
 
 set autowrite
 
@@ -81,9 +68,6 @@ set smartcase
 if has('nvim')
 	au TermOpen * setlocal nonumber norelativenumber
 endif
-
-autocmd! BufWritePost * Neomake
-autocmd! BufreadPost * Neomake
 
 if executable('ag')
 	let g:ackprg = 'ag --vimgrep'
@@ -117,3 +101,28 @@ augroup resCur
 augroup END
 
 set nofixeol
+
+let g:ale_completion_enabled = 1
+
+lua require("config.lazy")
+
+" TODO: probably move this to its own file.
+lua require('lualine').setup()
+
+" Tell vim the terminal supports 256 colors and use solarized dark
+set t_Co=256
+set background=dark
+colorscheme solarized
+set termguicolors
+
+
+" TODO
+" lua local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
+" lua vim.keymap.set("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
+" lua vim.keymap.set("i", "<S-TAB>", [[coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"]], opts)
+"
+" inoremap <expr> <TAB> pumvisible() ? "<C-y>" : "<TAB>"
+"
+let g:ale_linters = {
+\   'python': ['pylint'],
+\}
