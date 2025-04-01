@@ -126,3 +126,5 @@ set termguicolors
 let g:ale_linters = {
 \   'python': ['pylint'],
 \}
+
+lua require('config.pyright')

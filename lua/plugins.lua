@@ -33,6 +33,8 @@ return {
 	'tpope/vim-unimpaired',
 	'tpope/vim-endwise',
 
+	'neovim/nvim-lspconfig',
+
 	-- broken
 	-- 'ervandew/supertab',
 	-- temp
