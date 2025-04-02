@@ -35,8 +35,5 @@ return {
 
 	'neovim/nvim-lspconfig',
 
-	-- broken
-	-- 'ervandew/supertab',
-	-- temp
-	'Noeda/supertab',
+	'ervandew/supertab',
 }
