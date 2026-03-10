@@ -8,7 +8,7 @@ function get_venv_path()
 	end
 end
 
-require'lspconfig'.pyright.setup {
+vim.lsp.config('pyright', {
 	settings = {
 		python = {
 			venv = get_venv_path(),
@@ -19,4 +19,6 @@ require'lspconfig'.pyright.setup {
 			},
 		},
 	},
-}
+})
+
+vim.lsp.enable('pyright')
