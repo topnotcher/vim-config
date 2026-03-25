@@ -2,8 +2,7 @@
 
 git pull origin master
 
-# TODO
-XDG_CONFIG_HOME=$HOME/.config
+XDG_CONFIG_HOME="${XDG_CONFIG_HOME:-$HOME/.config}"
 VIM_CONFIG=$(realpath $(dirname $0))
 NVIM_CONFIG=$XDG_CONFIG_HOME/nvim
 VIMRC=$HOME/.vimrc
