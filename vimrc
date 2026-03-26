@@ -102,6 +102,10 @@ augroup END
 
 set nofixeol
 
+if !empty($SSH_CONNECTION)
+	set mouse=
+endif
+
 let g:ale_completion_enabled = 1
 
 lua require("config.lazy")
