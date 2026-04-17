@@ -106,6 +106,25 @@ if !empty($SSH_CONNECTION)
 	set mouse=
 endif
 
+" Always use OSC52 for the system clipboard — works locally and over SSH
+" without needing xclip/wl-copy or X11 forwarding.
+if has('nvim-0.10')
+lua <<EOF
+	local osc52 = require('vim.ui.clipboard.osc52')
+	vim.g.clipboard = {
+		name = 'OSC 52',
+		copy = {
+			['+'] = osc52.copy('+'),
+			['*'] = osc52.copy('*'),
+		},
+		paste = {
+			['+'] = osc52.paste('+'),
+			['*'] = osc52.paste('*'),
+		},
+	}
+EOF
+endif
+
 let g:ale_completion_enabled = 1
 
 lua require("config.lazy")
